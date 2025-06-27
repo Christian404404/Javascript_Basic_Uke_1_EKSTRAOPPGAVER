@@ -78,7 +78,7 @@ if (total < 10 && total % 1 === 0) {
   console.log(`Liten helt: ${total}`);
 } else if (total >= 10 && total % 1 === 0) {
   console.log(`Stor helt: ${total}`);
-} else console.log(`Desimal helt ${total}`);
+} else console.log(`Desimalhelt: ${total}`);
 /******************************************************************************
 EKSTRAOPPGAVE 3 – SWITCH MED INNEBYGD SJEKK
 
@@ -102,6 +102,7 @@ Bruk en `switch` for å bestemme tekst som skal vises, og gjør følgende:
 
 ******************************************************************************/
 
+// Skriv koden for ekstraoppgave 3 her
 let weatherType = "sol";
 let temperature = 20;
 // prettier-ignore
@@ -120,11 +121,9 @@ switch (weatherType) {
     case "tåke":
         console.log("Sikt dårlig, kjør forsiktig.")
         break;
-    case "vind":
-        console.log("Hold på hatten!")
-        break;
-        default:
+        case "vind":
+          console.log("Hold på hatten!")
+          break;
+          default:
             console.log("Ukjent værtype.")
-}
-
-// Skriv koden for ekstraoppgave 3 her
+          }
